@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarambh - Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Aarambh</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Aarambh</h1>
+            <p>Your trusted partner in creating unforgettable events.</p>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+
+    <!-- about section-->
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+          <h2>About Aarambh</h2>
+          <p>Aarambh is a premier event management company dedicated to creating unforgettable experiences. Our team of experts works tirelessly to ensure that every event is executed flawlessly, from weddings and corporate events to parties and festivals.</p>
+          <p>With a passion for creativity and attention to detail, we tailor each event to meet our clients' unique needs. We believe in the power of celebration and strive to bring joy to every occasion.</p>
+          
+          <div class="mission-values">
+              <div class="value">
+                  <h3>Our Mission</h3>
+                  <p>To deliver exceptional event experiences that exceed expectations and create lasting memories for our clients and their guests.</p>
+              </div>
+              <div class="value">
+                  <h3>Our Values</h3>
+                  <ul>
+                      <li>Integrity</li>
+                      <li>Creativity</li>
+                      <li>Customer Satisfaction</li>
+                      <li>Collaboration</li>
+                  </ul>
+              </div>
+          </div>
+  
+          <div class="team-section">
+              <h3>Meet Our Team</h3>
+              <p>Our dedicated team of professionals brings together diverse skills and experiences to ensure your event is a success.</p>
+              <div class="team-members">
+                  <div class="member">
+                      <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team Member 1">
+                      <h4>Deepak Yadav</h4>
+                      <p>Event Planner</p>
+                  </div>
+                  <div class="member">
+                      <img src="https://img.freepik.com/premium-photo/young-indian-man-wearing-long-sleeve-striped-polo-shirt_251136-18134.jpg?w=360" alt="Team Member 2">
+                      <h4>Shubham Sharma</h4>
+                      <p>Creative Director</p>
+                  </div>
+                  <div class="member">
+                      <img src="https://img.freepik.com/premium-photo/young-indian-boy-wearing-blue-shirt-looking-smart-against-brown-background_251136-11114.jpg?w=360" alt="Team Member 3">
+                      <h4>Amit </h4>
+                      <p>Logistics Manager</p>
+                  </div>
+              </div>
+          </div>
+  
+          <div class="contact-info">
+              <h3>Get in Touch!</h3>
+              <p>If you're ready to start planning your next event, contact us today!</p>
+              <button class="contact-button">Contact Us</button>
+          </div>
+      </div>
+  </section>
+
+  <!-- end of about section -->
+
+  <!-- services section-->
+
+  <section id="services" class="services-section">
+    <div class="services-container">
+        <h2>Our Services</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="service-card">
+                        <img src="wedding.jpg" alt="Wedding Planning">
+                        <h3>Wedding Planning</h3>
+                        <p>We specialize in creating beautiful and memorable weddings tailored to your preferences.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-card">
+                        <img src="corporate.png" alt="Corporate Events">
+                        <h3>Corporate Events</h3>
+                        <p>From conferences to team-building events, we manage all aspects of corporate gatherings.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-card">
+                        <img src="birthday.jpg" alt="Birthday Parties">
+                        <h3>Birthday Parties</h3>
+                        <p>Celebrate your special day with a customized birthday party that reflects your style.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="service-card">
+                        <img src="cultural.jpg" alt="Cultural Festivals">
+                        <h3>Cultural Festivals</h3>
+                        <p>We organize vibrant cultural festivals that celebrate diversity and community spirit.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+  <!-- end of services section-->
+
+<!-- Gallery section starts here -->
+<section id="gallery" class="gallery-section">
+  <div class="gallery-container">
+      <h2>Our Gallery</h2>
+      <div class="gallery-grid">
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Event" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Event" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/flagged/photo-1572534779127-b64758946728?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Birthday Party" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Corporate Event" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://plus.unsplash.com/premium_photo-1729038878379-fc593d6611fd?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Celebration" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1594397856557-75aca2e35b00?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cultural Festival" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Corporate Gathering" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+          <div class="gallery-item">
+              <img src="https://plus.unsplash.com/premium_photo-1677221924410-0d27f4940396?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Reception" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x300/333/fff?text=Image+Not+Available';">
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Gallery section ends here -->
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>"Aarambh brought our dream wedding to life. Highly professional and creative!"</p>
+                    <strong>- Anjali Mehta</strong>
+                </div>
+                <div class="testimonial">
+                    <p>"Our annual conference was a huge success, thanks to Aarambh!"</p>
+                    <strong>- Rahul Sharma</strong>
+                </div>
+                <div class="testimonial">
+                  <p>"Our college's Pre-Diwali fest was wonderful only because of Aarambh, keep it up Aarambh!"</p>
+                  <strong>- Ravi Gupta</strong>
+              </div>
+              <div class="testimonial">
+                <p>"It was my brother's birthday and Aarambh made it remembered for life!"</p>
+                <strong>- Ayush Mishra</strong>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aarambh. Designed with ❤️.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
